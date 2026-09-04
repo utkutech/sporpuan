@@ -1,0 +1,6 @@
+{
+  "name": "SporPuan",
+  "description": "SporPuan - Türkiye'nin bağımsız spor etkinliği puanlama, detaylı kriter analizi, taraftar değerlendirmeleri ve organizatör platformu.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

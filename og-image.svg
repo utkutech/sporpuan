@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <!-- Glowing Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Stadium Grid Pattern Lines -->
+  <path d="M 0 150 L 1200 150 M 0 300 L 1200 300 M 0 450 L 1200 450" stroke="#334155" stroke-width="1" opacity="0.3"/>
+  <path d="M 300 0 L 300 630 M 600 0 L 600 630 M 900 0 L 900 630" stroke="#334155" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Decorative Glowing Orbs -->
+  <circle cx="200" cy="180" r="180" fill="#2563eb" opacity="0.18" filter="url(#glow)"/>
+  <circle cx="1000" cy="450" r="220" fill="#1d4ed8" opacity="0.15" filter="url(#glow)"/>
+  
+  <!-- Main Card Container Frame -->
+  <rect x="80" y="60" width="1040" height="510" rx="32" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="2"/>
+  
+  <!-- SporPuan Star Logo -->
+  <g transform="translate(140, 155)">
+    <!-- Outer Shadow Glow -->
+    <rect x="-10" y="-10" width="180" height="180" rx="40" fill="#2563eb" opacity="0.3" filter="url(#glow)"/>
+    <g transform="scale(6.666)">
+      <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" fill="#2563eb" stroke="#2563eb" stroke-width="1.5" stroke-linejoin="round" />
+      <path d="M17 9 10.5 15.5l-3.5-3.5" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+  
+  <!-- Typography Brand Title -->
+  <text x="340" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="84" fill="#ffffff" letter-spacing="-2">
+    spor<tspan fill="#3b82f6">puan</tspan>
+  </text>
+  
+  <!-- Tagline Subtitle -->
+  <text x="340" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="28" fill="#94a3b8">
+    Türkiye'nin Bağımsız Spor Tesisleri Puanlama Platformu
+  </text>
+  
+  <!-- 5 Gold Stars Rating Badge -->
+  <g transform="translate(340, 330)">
+    <rect x="0" y="0" width="460" height="42" rx="12" fill="#0f172a" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
+    <!-- Stars -->
+    <text x="18" y="27" font-family="sans-serif" font-size="20" fill="#fbbf24">★★★★★</text>
+    <text x="110" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="15" fill="#f8fafc">
+      Tarafsız Spor Tesisi İncelemeleri
+    </text>
+  </g>
+  
+  <!-- Key Evaluation Badges -->
+  <g transform="translate(140, 440)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="160" height="44" rx="12" fill="#334155" fill-opacity="0.5" stroke="#475569" stroke-width="1"/>
+    <text x="80" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15" fill="#e2e8f0">🏟️ Tesisler</text>
+    
+    <!-- Badge 2 -->
+    <rect x="180" y="0" width="160" height="44" rx="12" fill="#334155" fill-opacity="0.5" stroke="#475569" stroke-width="1"/>
+    <text x="260" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15" fill="#e2e8f0">🔥 Hijyen</text>
+    
+    <!-- Badge 3 -->
+    <rect x="360" y="0" width="160" height="44" rx="12" fill="#334155" fill-opacity="0.5" stroke="#475569" stroke-width="1"/>
+    <text x="440" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15" fill="#e2e8f0">🏋️ Ekipman</text>
+    
+    <!-- Badge 4 -->
+    <rect x="540" y="0" width="160" height="44" rx="12" fill="#334155" fill-opacity="0.5" stroke="#475569" stroke-width="1"/>
+    <text x="620" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15" fill="#e2e8f0">👨‍🏫 Eğitmen</text>
+    
+    <!-- Badge 5 -->
+    <rect x="720" y="0" width="200" height="44" rx="12" fill="#1e40af" fill-opacity="0.6" stroke="#3b82f6" stroke-width="1"/>
+    <text x="820" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="15" fill="#60a5fa">✨ Sporpuan AI</text>
+  </g>
+  
+  <!-- URL watermark -->
+  <text x="1080" y="530" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="18" fill="#64748b" letter-spacing="1">
+    SPORPUAN.COM
+  </text>
+</svg>

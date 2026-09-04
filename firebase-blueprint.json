@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "Facility": {
+      "title": "Facility",
+      "description": "A sports facility imported from Google Maps",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "location": { "type": "object" },
+        "googlePlaceId": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["name", "googlePlaceId"]
+    }
+  },
+  "firestore": {
+    "/facilities/{facilityId}": {
+      "schema": "Facility",
+      "description": "Collection of sports facilities"
+    }
+  }
+}
